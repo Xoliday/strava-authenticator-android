@@ -3,10 +3,11 @@
 buildscript {
     repositories {
         jcenter()
+        google()
     }
     dependencies {
         // https://developer.android.com/studio/releases/gradle-plugin.html
-        classpath 'com.android.tools.build:gradle:2.3.3'  // Gradle 2.14.1 or higher
+        classpath 'com.android.tools.build:gradle:3.4.2'  // Gradle 2.14.1 or higher
         //classpath 'com.android.tools.build:gradle:2.2.0-beta1'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -27,5 +28,8 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
     }
 }

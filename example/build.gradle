@@ -26,7 +26,7 @@ android {
 
 dependencies {
     // Example remote compile:
-    compile 'com.samsandberg.stravaauthenticator:strava-authenticator-android:2.0.0'
+    implementation 'com.samsandberg.stravaauthenticator:strava-authenticator-android:2.0.0'
 
     // Local compile (since it's in this project):
     //compile project(':strava-authenticator-android')
